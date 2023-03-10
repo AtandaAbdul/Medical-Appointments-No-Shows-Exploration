@@ -15,16 +15,25 @@ This analysis was performed using Python and the following libraries: Pandas, Nu
 **Analysis Result**<br/>
 The analysis was performed using both univariate and bivariate analysis involving distribution plots using proportions due to the imbalance of the dataset. The following findings were identified:
 
-**Age is correlated to hypertension and these two variables have an effect on whether a patient would show up for an appointment or not. The probability of a patient showing up increases with age.
+**Age** is correlated to hypertension and these two variables have an effect on whether a patient would show up for an appointment or not. The probability of a patient showing up increases with age.
 SMS notification for the appointment is necessary for a patient to show up for an appointment.
 Scholarship, diabetes, alcoholism, handicap, waiting days, gender, neighborhood, and scheduled day of the week do not seem to affect the decision of a patient in showing up or not.
 
 **Limitations**<br/>
 There were several limitations to this analysis, including:
+Further investigation is required to understand why there is a higher proportion of females attending the hospital. It may be related to gynecological issues, but additional data is needed to determine the exact reasons.
+Including features such as marital status and employment status in the dataset would provide more insights into the reasons for patients not showing up for appointments.
+Expanding the dataset to include more countries or regions would enhance the generalizability of the findings.
+The "no_show" column can be confusing as the values are reversed from what the column name suggests. This issue should be addressed in data processing and analysis.
+There were some data entries where the waiting days were negative, indicating errors in data collection or input. This issue needs to be investigated and resolved.
+The fact that some individuals with chronic diseases tend not to show up for appointments goes against common expectations. To understand the possible reasons for this, demographic information and additional data may need to be collected and analyzed.
 
-Invalid entries in the dataset such as appointments scheduled for past dates and about 1.3k duplicated entries were discovered and removed from the dataset. This reduced the volume of data used for analysis and could make the analysis result inaccurate.
-The imbalance of the dataset might have resulted from the fact that the data available is only recorded for some occurrences in a year, limiting the understanding of the patients better.
-There might be many other factors that can affect individual's decision to show up for an appointment or not, which are not covered in the dataset.
+
+
+
+
+
+
 
 **Conclusion**<br/>
 Overall, this analysis identified age and hypertension as important factors for predicting whether a patient will show up for their appointment. It also emphasized the importance of SMS notification for appointment reminders. Further research can be conducted to identify other factors that affect patient attendance at medical appointments.
